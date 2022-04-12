@@ -11,12 +11,12 @@
         body{
             text-align: center;
             font-family: 'Fjalla One', sans-serif;
-            background-color: #ffffff;
+            background-color: #fff;
         }
         .box{
             display: inline-block;
             display: inline-block;
-            color: #000000;
+            color: #000;
             padding: 10px;
             border-radius: 5px;
             min-width: 40px;
@@ -71,13 +71,13 @@
     function showRemaining (){
     now = new Date();
     // days_in_this_month = new Date( now.getFullYear(), now.getMonth()+1, 0).getDate(); 
-    // week starts on Tuesday
+    // week starts on Monday
    
     if(now.getDay() - 1 ){
       d = 6
     }
     else{
-       d = now.getDay() - 1
+       d = now.getDay() - 2
     }
     days = 6 - d ;
     hours = 23 - now.getHours();
