@@ -16,19 +16,19 @@
         .box{
             display: inline-block;
             display: inline-block;
-            color: #270401;
+            color: #dad5c5;
             padding: 10px;
             border-radius: 5px;
             min-width: 40px;
         }
         #days{
-            background-color:#dad5c5;
+            background-color:#b9e0f7 ;
         }
         #hours{
-            background-color:#e1c9a3;
+            background-color:#f58426;
         }
         #minutes{
-            background-color:#313037;
+            background-color:#182e3a;
         }
         h2{
             display: inline-block;
@@ -73,11 +73,11 @@
     // days_in_this_month = new Date( now.getFullYear(), now.getMonth()+1, 0).getDate(); 
     // week starts on Tuesday
    
-    if(now.getDay() == 0 ){
+    if(now.getDay() - 1 ){
       d = 6
     }
     else{
-       d = now.getDay() - 2
+       d = now.getDay() - 1
     }
     days = 6 - d ;
     hours = 23 - now.getHours();
